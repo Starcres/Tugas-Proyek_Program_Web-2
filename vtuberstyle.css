@@ -1,0 +1,138 @@
+/* Animasi saat halaman dimuat */
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f9f9f9, #dcdcdc);
+  color: #333;
+}
+
+/* Header Talent */
+header {
+  background: linear-gradient(to right, #007bff, #00aaff);
+  color: white;
+  padding: 15px 20px; /* Samakan padding dengan halaman Home */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Judul Halaman */
+header h1 {
+  font-size: 28px; /* Samakan dengan halaman Home */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Navigasi */
+nav {
+  margin-top: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Samakan dengan Home */
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.vtuber-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.vtuber-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vtuber-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vtuber-card img {
+  width: auto;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.vtuber-card h3 {
+  margin: 10px 0;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vtuber-card h5 {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.vtuber-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
